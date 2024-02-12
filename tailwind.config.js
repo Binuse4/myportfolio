@@ -76,6 +76,9 @@ module.exports = {
       },
       backgroundImage: {
         hero: 'url(/hero/home-hero-bg-2.jpg)',
+        hero_shape:'url(/hero/shape2.png)',
+        hero_shape1_light:'url(/hero/shape1.webp)',
+        hero_shape2_dark:'url(/hero/hero-shape2.png)',
       },
     },
   },

@@ -38,9 +38,43 @@ const Hero = () => {
                                 <Download size={18}/>
                             </Button>
                         </div>
+                        {/* socials ici ça marche pas comme prévu c'est à revoir*/}   
+                        <Socials 
+                            containerStyles='flex flex-row gap-x-6 mx-auto xl:mx-0' 
+                            iconsStyles='text-foreground text-[22px] hover:text-primary transition-all'
+                        />
                     </div>
                     {/* image */}
-                    <div className='hidden xl:flex relative'>Image</div>
+                    <div className='hidden xl:flex relative'>
+                        {/* Badge 1 */}
+                        <Badge 
+                            containerStyles='absolute top-[24%] right-[24rem] '
+                            icon={<RiBriefcase4Fill/>} 
+                            endCountNum={2} 
+                            badgeText='Years Of Experience'
+                        />
+                        {/* Badge 2 */}
+                        <Badge 
+                            containerStyles='absolute top-[80%] right-[20rem] '
+                            icon={<RiTodoFill/>} 
+                            endCountNum={6} 
+                            badgeText='Finished Projects'
+                        />
+                        {/* Badge  3*/}
+                        {/* <Badge 
+                            containerStyles='absolute top-[55%] -left-[10rem] '
+                            icon={<RiTeamFill/>} 
+                            endCountNum={2} 
+                            badgeText='Clients'
+                        /> */}
+                        <div className='bg-hero_shape dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'>
+                            <DevImg 
+                                containerStyles='bg-hero_shape1_light w-[510px] h-[462px] bg-no-repeat relative bg-bottom' 
+                                imgSrc=''
+                            /> 
+                            {/* Il faut au niveau de image rajouter une photo de toi */}
+                        </div>
+                    </div>
                 </div>
                 {/*  icons */}
                 <div className='hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce'>
