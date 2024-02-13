@@ -22,7 +22,7 @@ const Hero = () => {
                 <div className='flex justify-between gap-x-8'>
                     {/* text */}
                     <div className='flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left'>
-                        <div className='text-sm uppercase font-semibold md-4 text-primary tracking-[4px]'>Web Developper</div>
+                        <div className='text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]'>Web Developper</div>
                         <h1 className='h1 mb-4'>Hello, my name is Tanya ADISSIN</h1>
                         <p className='subtitle max-w-[490px] mx-auto xl:mx-0'> Brief description of myself ndvjnrnfdlk,qlkc,q,nfkq,kc,q,fsskdjnc,sk,lfsd</p>
                         {/* button */}
