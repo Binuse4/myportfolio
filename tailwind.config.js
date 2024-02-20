@@ -86,6 +86,8 @@ module.exports = {
         about_shape_dark: 'url(/about/shape1.webp)',
         dots_light: 'url(/dots_light.png)',
         dots_dark: 'url(/dots_dark.png)',
+        work_project_bg_light: 'url(/work/work_project_light.png)',
+        work_project_bg_dark: 'url(/work/work_project_dark.png)',
       },
     },
   },
