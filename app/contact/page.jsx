@@ -30,7 +30,7 @@ const Contact = () => {
                         {/* mail */}
                         <div className='flex items-center gap-x-8'>
                             <MailIcon size={18} className='text-primary'/>
-                            <div> binuse.adissin@yahoo.com</div>
+                            <div><a href='mailto:binuse.adissin@yahoo.com'>binuse.adissin@yahoo.com</a></div>
                         </div>
                         {/* mail */}
                         <div className='flex items-center gap-x-8'>
