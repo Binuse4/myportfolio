@@ -10,7 +10,7 @@ import { Pagination } from 'swiper/modules';
 
 const reviewData = [
     {
-        avatar: '/reviews/avatar_man.jpg',
+        avatar: '/reviews/avatar_man.png',
         name: ' Sébastien Serais',
         job : 'Teacher at ESIGELEC',
         review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam quibusdam assumenda, iure officia reprehenderit doloremque.',
@@ -24,7 +24,7 @@ const reviewData = [
 
     },
     {
-        avatar: '/reviews/avatar_man.jpg',
+        avatar: '/reviews/avatar_man.png',
         name: 'Antonia Hounsa',
         job : 'Teacher at ESIGELEC',
         review: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam quibusdam assumenda, iure officia reprehenderit doloremque.',

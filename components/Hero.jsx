@@ -26,9 +26,9 @@ const Hero = () => {
                         <h1 className='h1 mb-4'>Hello, my name is Tanya ADISSIN</h1>
                         <p className='subtitle max-w-[490px] mx-auto xl:mx-0'> Brief description of myself ndvjnrnfdlk,qlkc,q,nfkq,kc,q,fsskdjnc,sk,lfsd</p>
                         {/* button */}
-                        <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 md-12 '> 
+                        <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12 '> 
                             <Link href='/contact'>
-                                 <Button className='gap-x-2'>
+                                <Button className='gap-x-2'>
                                     Contact me <Send size={18}/>
                                 </Button>
                             </Link>
