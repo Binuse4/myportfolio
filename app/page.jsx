@@ -6,6 +6,7 @@ import Services from '@/components/Services';
 import Work from '@/components/Works';
 import Reviews from '@/components/Reviews';
 import Cta from '@/components/Cta';
+import Certifications from '@/components/Certifications';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About/>
       <Services/>
       <Work/>
+      <Certifications/>
       <Reviews/>
       <Cta/>
     </main>

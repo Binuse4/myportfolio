@@ -3,7 +3,7 @@ import { Card , CardContent , CardDescription , CardHeader, CardTitle } from '@/
 
 const servicesData = [
     {
-        icon: <GranttChartSquare size={78} strokeWidth={0.8} />,
+        icon: <Blocks size={78} strokeWidth={0.8} />,
         title: 'Web Design',
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore nostrum cumque accusantium voluptate aut, sint consequuntur dolore? Architecto fugit corporis atque soluta enim dolore commodi necessitatibus, sint explicabo quasi.'
     },
@@ -29,9 +29,9 @@ const Services = () => {
                     {servicesData.map((item,index)=> {
                         return (
                             <Card className='w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative' key={index}>
-                                {/* <CardHeader className='text-primary absolute -top-[60px]'>
+                                <CardHeader className='text-primary absolute -top-[60px]'>
                                     <div className='w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center'>{item.icon}</div>
-                                </CardHeader> */}
+                                </CardHeader>
                                 <CardContent>
                                     <CardTitle className='mb-4'>{item.title}</CardTitle>
                                     <CardDescription className='text-lg'>{item.description}</CardDescription>

@@ -38,6 +38,11 @@ const Form = () => {
       console.log("Message sent.");
       setEmailSubmitted(true);
     }
+    else
+    {
+      console.log("Message not sent.");
+      setEmailSubmitted(false);
+    }
   };
 
   return (
@@ -51,20 +56,20 @@ const Form = () => {
               <form className='flex flex-col gap-y-4' onSubmit={handleSubmit}>
                   {/* input */}
                   <div className='relative flex items-center'>
-                      <Input type='name' placeholder='Name'/>
+                      <Input name='subject' type='name' placeholder='Name'/>
                       <User className='absolute right-6'/>
                   </div>
                   {/* input */}
                   <div className='relative flex items-center'>
-                      <Input type='email' placeholder='Email'/>
+                      <Input name='email' type='email' placeholder='Email'/>
                       <MailIcon className='absolute right-6'/>
                   </div>
                   {/* input */}
                   <div className='relative flex items-center'>
-                      <Textarea type='text' placeholder='Message'/>
+                      <Textarea name='message' type='text' placeholder='Message'/>
                       <MessageSquare className='absolute top-4 right-6'/>
                   </div>
-                  <Button className='flex items-center gap-x-1 max-w-[166px]'>
+                  <Button className='flex items-center gap-x-1 max-w-[166px]' type="submit">
                       Send
                       <ArrowRightIcon size={20}/>
                   </Button>

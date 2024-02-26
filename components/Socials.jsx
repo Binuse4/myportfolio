@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const icons = [
     {
-        path:'/',
+        path:'https://www.linkedin.com/in/binus%C3%A8-tanya-adissin/',
         name : <RiLinkedinFill/>,
     },
     {
-        path:'/',
+        path:'https://github.com/Binuse4',
         name : <RiGithubFill/>,
     },
 ];
