@@ -78,7 +78,7 @@ const Hero = () => {
                             A recent graduate with a passion for digital design. My journey begins with a curiosity: "How does it work?". Today, I'm transforming that curiosity into innovative web solutions, combining functionality and aesthetics.  
                         </p>
                         {/* button */}
-                        <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12 '> 
+                        <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-8 '> 
                             <Link href='/contact'>
                                 <Button className='gap-x-2'>
                                     Contact me <Send size={18}/>

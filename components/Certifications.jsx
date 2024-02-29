@@ -12,24 +12,24 @@ import CertificationCard from '@/components/CertificationCard';
 
 const certificationData = [
     {
+      image: '/certification/ReactJs.PNG',
+      category: 'front-end',
+      name:'ReactJs',
+    },
+    {
         image: '/certification/az-900.PNG',
-        category: 'react js',
-        name:'Microsoft Certified: Azure Fundamentals',
+        category: 'back-end',
+        name:'Microsoft Azure Fundamentals',
     },
     {
       image: '/certification/apiRestful.PNG',
-      category: 'react js',
+      category: 'back-end',
       name:'Api Restful',
     },
     {
-      image: '/certification/certificationTest.png',
-      category: 'react js',
-      name:'My Portfolio',
-    },
-    {
-      image: '/certification/certificationTest.png',
-      category: 'react js',
-      name:'My Portfolio',
+      image: '/certification/az-900.PNG',
+      category: 'back-end',
+      name:'Microsoft Azure AI Fundamentals',
     },
 ];
 

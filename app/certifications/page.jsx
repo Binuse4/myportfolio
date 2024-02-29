@@ -4,26 +4,26 @@ import { Tabs , TabsList , TabsContent , TabsTrigger } from '@/components/ui/tab
 import CertificationCard from '@/components/CertificationCard';
 
 const certificationData = [
-  {
-    image: '/certification/certificationTest.png',
-    category: 'react js',
-    name:'My Portfolio',
-  },
-  {
-    image: '/certification/certificationTest.png',
-    category: 'react js',
-    name:'My Portfolio',
-  },
-  {
-    image: '/certification/certificationTest.png',
-    category: 'react js',
-    name:'My Portfolio',
-  },
-  {
-    image: '/certification/certificationTest.png',
-    category: 'react js',
-    name:'My Portfolio',
-  },
+    {
+        image: '/certification/az-900.PNG',
+        category: 'back-end',
+        name:'Microsoft Certified: Azure Fundamentals',
+    },
+    {
+      image: '/certification/apiRestful.PNG',
+      category: 'back-end',
+      name:'Api Restful',
+    },
+    {
+      image: '/certification/certificationTest.png',
+      category: 'AI',
+      name:'My Portfolio',
+    },
+    {
+      image: '/certification/certificationTest.png',
+      category: 'front-end',
+      name:'My Portfolio',
+    },
 ];
 
 

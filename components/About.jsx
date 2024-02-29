@@ -15,7 +15,7 @@ const infoData = [
     },
     {
         icon: <MailIcon size={20} />,
-        text: 'binuse.adissin@yahoo.com',
+        text: 'binuse.adissin@groupe-esigelec.org',
     },
     {
         icon: <Calendar size={20} />,
@@ -27,7 +27,7 @@ const infoData = [
     },
     {
         icon: <HomeIcon size={20} />,
-        text: '124 C Rue Louis Blanc, 76100 , Rouen France', 
+        text: 'Rouen France', 
     },
 ]
 const qualificationData = [
@@ -56,7 +56,7 @@ const qualificationData = [
         data: [
             {
                 company: 'SQLI Digital Experience',
-                role: 'Design Dngineer and .Net Full Stack Developer',
+                role: 'Design Engineer Developer.Net',
                 years: '2022 - Present',
                 location: 'Rouen/France'
             },
@@ -68,7 +68,7 @@ const qualificationData = [
             },
             {
                 company: 'Treasury and Public Accounting Department',
-                role: 'Assistant to the Deputy Head of the Research and Development Department',
+                role: 'Assistant in Research and Development Department',
                 years: '2020 - 1 month',
                 location: 'Cotonou/Benin'
             },
@@ -80,7 +80,7 @@ const skillData = [
         title: 'skills',
         data: [
             {
-                name: 'C#, .Net',
+                name: 'C#, .Net, Python',
             },
             {
                 name: 'Java, Spring Boot',

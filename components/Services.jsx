@@ -1,9 +1,9 @@
-import { GranttChartSquare , Blocks , Gem } from 'lucide-react';
+import { CodeSquare , Blocks , Gem } from 'lucide-react';
 import { Card , CardContent , CardDescription , CardHeader, CardTitle } from '@/components/ui/card';
 
 const servicesData = [
     {
-        icon: <Blocks size={78} strokeWidth={0.8} />,
+        icon: <Gem size={78} strokeWidth={0.8} />,
         title: 'Web Design',
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore nostrum cumque accusantium voluptate aut, sint consequuntur dolore? Architecto fugit corporis atque soluta enim dolore commodi necessitatibus, sint explicabo quasi.'
     },
@@ -13,7 +13,7 @@ const servicesData = [
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore nostrum cumque accusantium voluptate aut, sint consequuntur dolore? Architecto fugit corporis atque soluta enim dolore commodi necessitatibus, sint explicabo quasi.'
     },
     {
-        icon: <Gem size={78} strokeWidth={0.8} />,
+        icon: <CodeSquare size={78} strokeWidth={0.8} />,
         title: 'App Development',
         description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis inventore nostrum cumque accusantium voluptate aut, sint consequuntur dolore? Architecto fugit corporis atque soluta enim dolore commodi necessitatibus, sint explicabo quasi.'
     },
