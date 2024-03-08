@@ -7,22 +7,32 @@ const certificationData = [
     {
         image: '/certification/az-900.PNG',
         category: 'back-end',
-        name:'Microsoft Certified: Azure Fundamentals',
-    },
-    {
-      image: '/certification/apiRestful.PNG',
-      category: 'back-end',
-      name:'Api Restful',
+        name:'Microsoft Azure Fundamentals',
     },
     {
       image: '/certification/certificationTest.png',
       category: 'AI',
-      name:'My Portfolio',
+      name:'Microsoft AI Fundamentals',
     },
     {
-      image: '/certification/certificationTest.png',
-      category: 'front-end',
-      name:'My Portfolio',
+      image: '/certification/BlazorDonet.PNG',
+      category: 'back-end',
+      name:'Microsoft Blazor',
+    },
+    {
+        image: '/certification/ReactJS.PNG',
+        category: 'front-end',
+        name:'ReactJS',
+    },
+    {
+        image: '/certification/apiRestful.PNG',
+        category: 'back-end',
+        name:'Api Restful',
+    },
+    {
+        image: '/certification/Git.PNG',
+        category: 'back-end',
+        name:'Git',
     },
 ];
 

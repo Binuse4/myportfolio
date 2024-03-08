@@ -11,26 +11,36 @@ import { Pagination } from 'swiper/modules';
 import CertificationCard from '@/components/CertificationCard';
 
 const certificationData = [
-    {
-      image: '/certification/ReactJs.PNG',
+  {
+      image: '/certification/az-900.PNG',
+      category: 'back-end',
+      name:'Microsoft Azure Fundamentals',
+  },
+  {
+    image: '/certification/certificationTest.png',
+    category: 'AI',
+    name:'Microsoft AI Fundamentals',
+  },
+  {
+    image: '/certification/BlazorDonet.PNG',
+    category: 'back-end',
+    name:'Microsoft Blazor',
+  },
+  {
+      image: '/certification/ReactJS.PNG',
       category: 'front-end',
-      name:'ReactJs',
-    },
-    {
-        image: '/certification/az-900.PNG',
-        category: 'back-end',
-        name:'Microsoft Azure Fundamentals',
-    },
-    {
+      name:'ReactJS',
+  },
+  {
       image: '/certification/apiRestful.PNG',
       category: 'back-end',
       name:'Api Restful',
-    },
-    {
-      image: '/certification/az-900.PNG',
+  },
+  {
+      image: '/certification/Git.PNG',
       category: 'back-end',
-      name:'Microsoft Azure AI Fundamentals',
-    },
+      name:'Git',
+  },
 ];
 
 const Certifications = () => {

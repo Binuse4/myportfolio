@@ -12,7 +12,7 @@ import ProjectCard from '@/components/ProjectCard';
 
 const projectData = [
     {
-        image: '/work/workTest.png',
+        image: '/work/portfolio.PNG',
         category: 'react js',
         name:'My Portfolio',
         description: 'Creation of a personalized online portfolio, highlighting my skills, projects and achievements to present my career path and skills in a professional way to potential employers.',
@@ -20,7 +20,7 @@ const projectData = [
         github: '/',
     },
     {
-      image: '/work/workTest.png',
+      image: '/work/todolist.PNG',
       category: 'react js',
       name:'Todo List App',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo explicabo nesciunt facere dolores velit perferendis delectus non harum dolor quaerat voluptates libero maxime sed. Fugit dolorem soluta praesentium molestias.',
@@ -28,7 +28,7 @@ const projectData = [
       github: '/',
     },
     {
-      image: '/work/workTest.png',
+      image: '/work/bookExchange.PNG',
       category: 'react js',
       name:'Book Exchange Platform',
       description: 'Development of a book exchange platform enabling users to list and find books for exchange, enhanced by advanced search options and a book rating system.',
@@ -36,7 +36,7 @@ const projectData = [
       github: '/',
     },
     {
-      image: '/work/workTest.png',
+      image: '/work/quizApp.PNG',
       category: '.Net',
       name:'QuizArena',
       description: 'Development of an interactive quiz application enabling users to test their knowledge through various categories of questions, with a scoring system to evaluate performance.',
@@ -44,7 +44,7 @@ const projectData = [
       github: '/',
     },
     {
-      image: '/work/workTest.png',
+      image: '/work/donutShop.PNG',
       category: '.Net',
       name:'SweetRings',
       description: 'Development of an online ordering platform dedicated to donut lovers, offering a varied selection and the possibility of customizing orders for a unique gourmet experience.',
@@ -52,37 +52,37 @@ const projectData = [
       github: '/',
     },
     {
-      image: '/work/workTest.png',
+      image: '/work/blogApp.PNG',
       category: '.Net',
       name:'Blog',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo explicabo nesciunt facere dolores velit perferendis delectus non harum dolor quaerat voluptates libero maxime sed. Fugit dolorem soluta praesentium molestias.',
       link:'/',
       github: '/',
     },
-    {
-      image: '/work/workTest.png',
-      category: '.Net',
-      name:'My Portfolio',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo explicabo nesciunt facere dolores velit perferendis delectus non harum dolor quaerat voluptates libero maxime sed. Fugit dolorem soluta praesentium molestias.',
-      link:'/',
-      github: '/',
-    },
-    {
-      image: '/work/workTest.png',
-      category: 'Java',
-      name:'My Portfolio',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo explicabo nesciunt facere dolores velit perferendis delectus non harum dolor quaerat voluptates libero maxime sed. Fugit dolorem soluta praesentium molestias.',
-      link:'/',
-      github: '/',
-    },
-    {
-      image: '/work/workTest.png',
-      category: 'Java',
-      name:'My Portfolio',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo explicabo nesciunt facere dolores velit perferendis delectus non harum dolor quaerat voluptates libero maxime sed. Fugit dolorem soluta praesentium molestias.',
-      link:'/',
-      github: '/',
-    },
+    // {
+    //   image: '/work/workTest.png',
+    //   category: '.Net',
+    //   name:'My Portfolio',
+    //   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo explicabo nesciunt facere dolores velit perferendis delectus non harum dolor quaerat voluptates libero maxime sed. Fugit dolorem soluta praesentium molestias.',
+    //   link:'/',
+    //   github: '/',
+    // },
+    // {
+    //   image: '/work/workTest.png',
+    //   category: 'Java',
+    //   name:'My Portfolio',
+    //   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo explicabo nesciunt facere dolores velit perferendis delectus non harum dolor quaerat voluptates libero maxime sed. Fugit dolorem soluta praesentium molestias.',
+    //   link:'/',
+    //   github: '/',
+    // },
+    // {
+    //   image: '/work/workTest.png',
+    //   category: 'Java',
+    //   name:'My Portfolio',
+    //   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo explicabo nesciunt facere dolores velit perferendis delectus non harum dolor quaerat voluptates libero maxime sed. Fugit dolorem soluta praesentium molestias.',
+    //   link:'/',
+    //   github: '/',
+    // },
 ];
 
 const Works = () => {

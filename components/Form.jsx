@@ -3,79 +3,96 @@ import React, { useState } from 'react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
-import { User , MailIcon,  ArrowRightIcon , MessageSquare } from 'lucide-react';
+import { MessageCircle , AtSign,  ArrowRightIcon , MessageSquare } from 'lucide-react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 const Form = () => {
   
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [isSending, setIsSending] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
 
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
-
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
+    //confirm email and message field are not empty
+    if (!formData.email || !formData.message) {
+      toast.info("Email and message are required fields");
+      return;
     }
-    else
-    {
-      console.log("Message not sent.");
-      setEmailSubmitted(false);
+
+    try {
+      setIsSending(true);
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      // handle success
+      if (response.ok) {
+        toast.success("Email Sent Successfully!");
+        setFormData({
+          email: "",
+          subject: "",
+          message: "",
+        })
+      } else {
+        toast.error("There was a problem sending email. Pls try again!");
+      }
+    } catch (error) {
+      console.log("Error sending email:", error);
+      toast.error("There was a problem sending email. Pls try again!");
+    } finally {
+      setIsSending(false);
     }
   };
 
+  <ToastContainer />
   return (
-
+    
     <div>
-      {emailSubmitted ? (
-        <p className="text-green-500 text-sm mt-2">
-          Email sent successfully!
-        </p>
-      ) : (
+  
               <form className='flex flex-col gap-y-4' onSubmit={handleSubmit}>
                   {/* input */}
                   <div className='relative flex items-center'>
-                      <Input name='subject' type='name' placeholder='Name'/>
-                      <User className='absolute right-6'/>
+                      <Input name='subject' type='name' placeholder='Subject' value={formData.subject} onChange={handleChange}/>
+                      <MessageCircle className='absolute right-6'/>
                   </div>
                   {/* input */}
                   <div className='relative flex items-center'>
-                      <Input name='email' type='email' placeholder='Email'/>
-                      <MailIcon className='absolute right-6'/>
+                      <Input name='email' type='email' placeholder='Your mail' value={formData.email} onChange={handleChange}/>
+                      <AtSign className='absolute right-6'/>
                   </div>
                   {/* input */}
                   <div className='relative flex items-center'>
-                      <Textarea name='message' type='text' placeholder='Message'/>
+                      <Textarea name='message'placeholder='Your message' value={formData.message} onChange={handleChange}/>
                       <MessageSquare className='absolute top-4 right-6'/>
                   </div>
                   <Button className='flex items-center gap-x-1 max-w-[166px]' type="submit">
-                      Send
+                  {isSending} &nbsp;Send
                       <ArrowRightIcon size={20}/>
                   </Button>
               </form>
-              )}
+              
      </div>
+     
   )
 }
 

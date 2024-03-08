@@ -71,7 +71,7 @@ const Hero = () => {
                     {/* text */}
                     <div className='flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left'>
                         <div className='text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]'>{`WebCoder `}{text}</div>
-                        <h1 className='h1 mb-4'>Hello, I'm is Tanya ADISSIN</h1>
+                        <h1 className='h1 mb-4'>Hello, I'm Tanya ADISSIN</h1>
                         <p className='subtitle max-w-[490px] mx-auto xl:mx-0'> 
                             New Era, New Ideas
                             <br/>
@@ -122,7 +122,7 @@ const Hero = () => {
                         <div className='bg-hero_shape dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'>
                             <DevImg 
                                 containerStyles='bg-hero_shape1_light w-[510px] h-[462px] bg-no-repeat relative bg-bottom' 
-                                imgSrc=''
+                                imgSrc='/hero_image-removebg-preview.png'
                             /> 
                             {/* Il faut au niveau de image rajouter une photo de toi */}
                         </div>
