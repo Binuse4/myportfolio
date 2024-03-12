@@ -4,9 +4,8 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { MessageCircle , AtSign,  ArrowRightIcon , MessageSquare } from 'lucide-react';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer } from 'react-toastify';
 
 const Form = () => {
   
@@ -30,7 +29,7 @@ const Form = () => {
       toast.info("Email and message are required fields");
       return;
     }
-
+    
     try {
       setIsSending(true);
       const response = await fetch("/api/send", {
@@ -45,9 +44,11 @@ const Form = () => {
         }),
       });
 
+      const resData = await response.json();
       // handle success
       if (response.ok) {
         toast.success("Email Sent Successfully!");
+        setIsSending(true);
         setFormData({
           email: "",
           subject: "",
@@ -64,12 +65,11 @@ const Form = () => {
     }
   };
 
-  <ToastContainer />
   return (
     
     <div>
-  
-              <form className='flex flex-col gap-y-4' onSubmit={handleSubmit}>
+      
+        <form className='flex flex-col gap-y-4' onSubmit={handleSubmit}>
                   {/* input */}
                   <div className='relative flex items-center'>
                       <Input name='subject' type='name' placeholder='Subject' value={formData.subject} onChange={handleChange}/>
@@ -90,7 +90,7 @@ const Form = () => {
                       <ArrowRightIcon size={20}/>
                   </Button>
               </form>
-              
+              <ToastContainer />  
      </div>
      
   )
