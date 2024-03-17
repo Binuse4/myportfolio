@@ -104,16 +104,16 @@ const skillData = [
                 imgPath: '/about/vscode.png',
             },
             {
-                imgPath: '/about/vscode.png',
+                imgPath: '/about/git.png',
             },
             {
-                imgPath: '/about/vscode.png',
+                imgPath: '/about/sql.png',
             },
             {
-                imgPath: '/about/vscode.png',
+                imgPath: '/about/scrum.png',
             },
             {
-                imgPath: '/about/vscode.png',
+                imgPath: '/about/spring_boot.png',
             },
             
         ]

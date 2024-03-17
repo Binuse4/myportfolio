@@ -73,9 +73,9 @@ const Hero = () => {
                         <div className='text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]'>{`WebCoder `}{text}</div>
                         <h1 className='h1 mb-4'>Hello, I'm Tanya ADISSIN</h1>
                         <p className='subtitle max-w-[490px] mx-auto xl:mx-0'> 
-                            New Era, New Ideas
+                            <strong>New Era, New Ideas</strong>
                             <br/>
-                            A recent graduate with a passion for digital design. My journey begins with a curiosity: "How does it work?". Today, I'm transforming that curiosity into innovative web solutions, combining functionality and aesthetics.  
+                            A recent graduate with a passion for digital design. My journey begins with a curiosity: "How does it work?". Today, I'm transforming that curiosity into innovative <strong>web solutions</strong>, combining functionality and aesthetics.  
                         </p>
                         {/* button */}
                         <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-8 '> 

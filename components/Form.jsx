@@ -31,9 +31,10 @@ const Form = () => {
     }
     
     try {
+
       setIsSending(true);
       const response = await fetch("/api/send", {
-        method: "POST",
+        method: 'POST',
         headers: {
           "Content-Type": "application/json",
         },
@@ -43,8 +44,6 @@ const Form = () => {
           message: formData.message,
         }),
       });
-
-      const resData = await response.json();
       // handle success
       if (response.ok) {
         toast.success("Email Sent Successfully!");

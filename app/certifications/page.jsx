@@ -34,6 +34,16 @@ const certificationData = [
         category: 'back-end',
         name:'Git',
     },
+    {
+        image: '/certification/EFCore.PNG',
+        category: 'back-end',
+        name:'Entity Framework Core 6',
+    },
+    {
+        image: '/certification/canva.png',
+        category: 'front-end',
+        name:'Canva',
+    },
 ];
 
 

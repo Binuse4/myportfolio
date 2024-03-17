@@ -17,7 +17,7 @@ const projectData = [
         name:'My Portfolio',
         description: 'Creation of a personalized online portfolio, highlighting my skills, projects and achievements to present my career path and skills in a professional way to potential employers.',
         link:'/',
-        github: '/',
+        github: 'https://github.com/Binuse4/myportfolio',
     },
     {
       image: '/work/todolist.PNG',
@@ -41,7 +41,7 @@ const projectData = [
       name:'QuizArena',
       description: 'Development of an interactive quiz application enabling users to test their knowledge through various categories of questions, with a scoring system to evaluate performance.',
       link:'/',
-      github: '/',
+      github: 'https://github.com/Binuse4/quiz-app',
     },
     {
       image: '/work/donutShop.PNG',
@@ -110,7 +110,7 @@ const Works = () => {
             {
               return (
                 <SwiperSlide key={index}>
-                  <ProjectCard project={project}/>
+                  <ProjectCard className="description-container" project={project}/>
                 </SwiperSlide>
               )
             })}

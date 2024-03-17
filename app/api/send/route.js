@@ -4,7 +4,7 @@ import React from 'react';
 import { EmailTemplate } from "@/components/EmailTemplate"
 import NextCors from 'nextjs-cors';
 
-export default async (req, res) => {
+export async function POST(req, res) {
 
   await NextCors(req, res, {
     // Options
@@ -13,10 +13,7 @@ export default async (req, res) => {
     optionsSuccessStatus: 200,
   });
   
-  const body = await req.body;
-  console.log(req.body);
-
-  const { message, email , subject } = body;
+  const { message, email , subject } = await req.json();
 
   // Check if the required fields are present
   if (!message || !email) {
@@ -40,8 +37,10 @@ export default async (req, res) => {
     }
 
     res.status(200).json({ message: "Email sent successfully", data });
-  } catch (error) {
+  } 
+  catch (error) {
     console.error("Error sending email:", error);
     res.status(500).json({ message: "Failed to send email", error });
   }
 }
+
