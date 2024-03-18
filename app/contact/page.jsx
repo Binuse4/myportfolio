@@ -43,7 +43,7 @@ const Contact = () => {
                             <div> +33 7 53 78 35 57</div>
                         </div>
                     </div>
-                   <Form/>
+                   {/* <Form/> */}
                 </div>
             </div>
         </section>

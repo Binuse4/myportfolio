@@ -9,11 +9,11 @@ const certificationData = [
         category: 'back-end',
         name:'Microsoft Azure Fundamentals',
     },
-    {
-      image: '/certification/certificationTest.png',
-      category: 'AI',
-      name:'Microsoft AI Fundamentals',
-    },
+    // {
+    //   image: '/certification/certificationTest.png',
+    //   category: 'AI',
+    //   name:'Microsoft AI Fundamentals',
+    // },
     {
       image: '/certification/BlazorDonet.PNG',
       category: 'back-end',

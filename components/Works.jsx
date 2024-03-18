@@ -19,14 +19,14 @@ const projectData = [
         link:'/',
         github: 'https://github.com/Binuse4/myportfolio',
     },
-    {
-      image: '/work/todolist.PNG',
-      category: 'react js',
-      name:'Todo List App',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo explicabo nesciunt facere dolores velit perferendis delectus non harum dolor quaerat voluptates libero maxime sed. Fugit dolorem soluta praesentium molestias.',
-      link:'/',
-      github: '/',
-    },
+    // {
+    //   image: '/work/todolist.PNG',
+    //   category: 'react js',
+    //   name:'Todo List App',
+    //   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo explicabo nesciunt facere dolores velit perferendis delectus non harum dolor quaerat voluptates libero maxime sed. Fugit dolorem soluta praesentium molestias.',
+    //   link:'/',
+    //   github: '/',
+    // },
     {
       image: '/work/bookExchange.PNG',
       category: 'react js',
@@ -59,14 +59,6 @@ const projectData = [
       link:'/',
       github: '/',
     },
-    // {
-    //   image: '/work/workTest.png',
-    //   category: '.Net',
-    //   name:'My Portfolio',
-    //   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo explicabo nesciunt facere dolores velit perferendis delectus non harum dolor quaerat voluptates libero maxime sed. Fugit dolorem soluta praesentium molestias.',
-    //   link:'/',
-    //   github: '/',
-    // },
     // {
     //   image: '/work/workTest.png',
     //   category: 'Java',
