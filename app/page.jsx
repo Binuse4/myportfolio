@@ -10,8 +10,8 @@ import Cta from '@/components/Cta';
 import Certifications from '@/components/Certifications';
 
 //deployement
-import { inject } from '@vercel/analytics';
-inject();
+import { Analytics } from "@vercel/analytics/react"
+
 export default function Home() {
   return (
     <main>
@@ -23,6 +23,7 @@ export default function Home() {
       <Certifications/>
       <Reviews/>
       <Cta/>
+      <Analytics />
     </main>
   );
 }
