@@ -58,8 +58,8 @@ const Hero = () => {
     }
 
     const downloadPdf = () => {
-        const pdfUrl = './Page1Rapport.pdf';
-        saveAs(pdfUrl, 'Page1Rapport.pdf');
+        const pdfUrl = './CV_Tanya_ADISSIN.pdf';
+        saveAs(pdfUrl, 'CV_Tanya_ADISSIN.pdf');
       };
     
     
