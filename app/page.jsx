@@ -9,6 +9,9 @@ import Reviews from '@/components/Reviews';
 import Cta from '@/components/Cta';
 import Certifications from '@/components/Certifications';
 
+//deployement
+import { inject } from '@vercel/analytics';
+inject();
 export default function Home() {
   return (
     <main>
@@ -23,3 +26,4 @@ export default function Home() {
     </main>
   );
 }
+
