@@ -14,14 +14,6 @@ const projectData = [
       github: 'https://github.com/Binuse4/myportfolio',
   },
   {
-    image: '/work/todolist.PNG',
-    category: 'react js',
-    name:'Todo List App',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo explicabo nesciunt facere dolores velit perferendis delectus non harum dolor quaerat voluptates libero maxime sed. Fugit dolorem soluta praesentium molestias.',
-    link:'/',
-    github: '/',
-  },
-  {
     image: '/work/bookExchange.PNG',
     category: 'react js',
     name:'Book Exchange Platform',
@@ -49,7 +41,7 @@ const projectData = [
     image: '/work/blogApp.PNG',
     category: '.Net',
     name:'Blog',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, nemo explicabo nesciunt facere dolores velit perferendis delectus non harum dolor quaerat voluptates libero maxime sed. Fugit dolorem soluta praesentium molestias.',
+    description: 'Visit my blog, a showcase of my Blazor skills where I share insights on life, love, anxiety management and the quest for spirituality.',
     link:'/',
     github: '/',
   },

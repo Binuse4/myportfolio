@@ -20,7 +20,7 @@ const certificationData = [
       name:'Microsoft Blazor',
     },
     {
-        image: '/certification/ReactJS.PNG',
+        image: '/certification/ReactJs.PNG',
         category: 'front-end',
         name:'ReactJS',
     },
