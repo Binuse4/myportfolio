@@ -110,10 +110,13 @@ const skillData = [
                 imgPath: '/about/sql.png',
             },
             {
-                imgPath: '/about/scrum.png',
+                imgPath: '/about/spring_boot.png',
             },
             {
-                imgPath: '/about/spring_boot.png',
+                imgPath: '/about/dotnet.png',
+            },
+            {
+                imgPath: '/about/scrum.png',
             },
             
         ]
@@ -134,7 +137,7 @@ const About = () => {
                 <div className='flex flex-col xl:flex-row'>
                     {/* image */}
                     <div className='hidden xl:flex flex-1 relative'>
-                        <DevImg containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative' imgSrc='/about/image6.PNG'/>
+                        <DevImg containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative' imgSrc='/about/image6.png'/>
                         {/* photo de moi */}
                     </div>
                     {/* tabs */}
@@ -261,11 +264,11 @@ const About = () => {
                                         <div>
                                             <h4 className='text-xl font-semibold mb-2 xl:text-left'>Tools</h4>
                                             <div className='border-b border-border mb-4'></div>
-                                            <div className='flex gap-x-8 justify-center xl:justify-start'>
+                                            <div className='flex gap-x-8 justify-center xl:justify-start items-center'>
                                                 {getData(skillData, 'tools').data?.map((item,index)=> {
                                                     const {imgPath} = item;
                                                     return (
-                                                        <div className='' key={index}>
+                                                        <div className='flex justify-center items-center' style={{ width: '48px', height: '48px' }} key={index}>
                                                             <Image src={imgPath} width={48} height={48} alt='' priority/>
                                                         </div>
                                                     );

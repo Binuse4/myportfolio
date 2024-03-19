@@ -80,7 +80,7 @@
 }
 
 .subtitle {
-  @apply text-muted-foreground text-lg mb-8 font-light;
+  @apply text-lg mb-8 font-light;
 }
 
 .section-title {
@@ -105,7 +105,7 @@
 .image_wrapper {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 20px; 
 }
 
@@ -122,9 +122,9 @@
 }
 
 .image_wrapper img {
-  max-width: 100px; /* ou la taille maximale souhaitée */
-  max-height: 100px; /* ou la taille maximale souhaitée */
-  object-fit: contain; /* Garantit que les logos sont entièrement visibles */
+  max-width: 100px; 
+  max-height: 100px; 
+  object-fit: contain; 
   margin: auto;
 }
 

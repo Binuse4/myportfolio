@@ -70,7 +70,7 @@ const Hero = () => {
                 <div className='flex justify-between gap-x-8'>
                     {/* text */}
                     <div className='flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left'>
-                        <div className='text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]'>{`WebCoder `}{text}</div>
+                        <div className='text-sm uppercase font-bold mb-4 tracking-[4px]'>{`WebCoder `}{text}</div>
                         <h1 className='h1 mb-4'>Hello, I'm Tanya ADISSIN</h1>
                         <p className='subtitle max-w-[490px] mx-auto xl:mx-0'> 
                             <strong>New Era, New Ideas</strong>
